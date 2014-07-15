@@ -1,27 +1,54 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background: #FCFCFC url(bg.jpg) repeat;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif/*rtl:prepend:"Droid Arabic Kufi","Droid Sans", */;
+}
+main {
+  max-width: 1100px;
+  margin: auto;
+}
 .title {
 }
-
-
-.banner {
-  border: 3px dashed #CCCCCC;
-  background: #eee;
-  height: 120px;
+.middle {
+  width: 200px;
 }
-.links {
 
-  font-size: 25px;
-  text-align: center;
+.shadowed {
+  box-shadow: 1px 1px 3px #888;
+}
+
+.clearfix {
+  clear: both;
+}
+.banner {
+  position: relative;
+  box-shadow: 1px 1px 2px #444;
+  width: 50%;
+  margin: auto;
+//  border: 3px dashed #CCCCCC;
+//  background: #eee url(DSC00823.JPG) no-repeat;
+  height: 160px;
+  img {
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+  }
+  h1 {
+    position: absolute;
+    right: 3px;
+    color: #333;
+    text-shadow: 1px 1px 1px #fff;
+    bottom: 0;
+  }
 }
 .link {
-  padding: 10px 20px;
   margin: 10px;
   display: inline-block;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  .main_link {
-    text-decoration: none;
-  }
+}
+.articles {
+  margin: 30px;
+  font-size: 20px;
 }

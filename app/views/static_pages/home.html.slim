@@ -1,33 +1,33 @@
-section.title
-  h1 Learn Spanish For Free
-
-section.banner
-  | Banner
-
-section.links
-  - array = ['home', 'learn to read now', 'basic course', 'intermediate course', 'advanced course']
+section.links.ui.aligned.center.header
+  - array = ['home', 'learn to read now', 'basic course', 'intermediate course', 'advanced course', 'Vocabulary with videos', 'Grammar', 'Exercises', 'Literature and music', 'SHOP']
   - array.map do |link|
-    .link= link_to link, '#', class: 'main_link'
+    .link= link_to link, '#', class: 'ui button blue'
+
+.articles
+  article.ui.piled.segment
+    = image_tag 'bsas-300x192.jpg', class: 'ui middle right floated image rounded shadowed'
+    h2 LEARN SPANISH FOR FREE
+    p This is a website completely free. There is a lot of contents and well organized information for that who wants to learn from the first, or for who already have some knowledge and want to extend it and make it concrete.
+
+  article.ui.piled.segment
+    = image_tag 'Paisajes-de-Mexico-para-Facebook-11.jpg', class: 'ui middle left floated image rounded shadowed'
+    h2 Why study Spanish?
+
+    p The Spanish is the third language most speaken in the world (after English and Chinese). Is one of the official language in ONU and differents kind of organizations and professional works.
+    h3 Also we would like to share The 3 most important point what make Spanish easy and very interesting:
+    .ui.bulleted.list.clearfix
+      .item Is very easy to associate the words, because of his similitude with al the other latin languages ( even knowing just English result very easy and pleasant the learning)
+      .item Spanish is a very logical languages, what make very understandable from the first and very easy to retain in the mind.
+
+      .item The pronunciation is very easy, because of his similitude READ-SPEAK and the no changes of the sound of letters.
 
 
 
-
-
-
-
-
-
-
-
-/.ui.menu
-/  a.active.item
-/    i.home.icon
-/    | Home
-/  a.item
-/    i.mail.icon
-/    | Messages
-/  .right.menu
-/    .item
-/      .ui.icon.input
-/        input placeholder="Search..." type="text"
-/          i.search.link.icon
+  article.ui.piled.segment
+    = image_tag 'plaza-cibeles.jpg', class: 'ui middle right floated image rounded shadowed'
+    p By the way, ¿Did you know that more than 400 millons persons have the Spanish as born language in the world?
+    p So, a lot countrys, cultures and beautiful people are waiting for you to speak! Let’s Start!
+    p
+      ' If this is your first time or you don’t remember good the language,
+      = link_to 'Start here!', '#', class: 'ui button green'
+    p If you are learning or speaking Spanish now, you can have a panoramic view for check where you are, and fix the weak points or check the material that you still don’t know.
